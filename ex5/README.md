@@ -1,6 +1,6 @@
 # Instructions
 
-1. this exercise calls you to write some async flow-control code. To start off with, you'll use thunks only
+1. this exercise calls you to write some async flow-control code. To start off with, you'll use promises only and asyncqc
 
 2. Expected Behavior
     - Request all 3 files at the same time (in 'parallel')
