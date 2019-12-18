@@ -1,3 +1,4 @@
+const ASQ = require('asynquence');
 function fakeAjax(url, cb) {
     let fakeResponse = {
         'file1': 'file One First',
@@ -20,8 +21,8 @@ function output(text) {
 }
 
 function getFile(file) {
-    return new Promise(function executor (resolve) {
-        fakeAjax(file, resolve)
+    return ASQ(function(done) {
+        fakeAjax(file, done)
     })
 }
 
